@@ -1,0 +1,49 @@
+* {
+  font-family: serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div#game-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+canvas#game {
+  margin: auto auto;
+}
+
+#game-over-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  display: none;
+}
+
+#game-over-modal .title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#game-over-modal img {
+  width: 70px;
+}
+/* canvas#game { */
+/*   height: 100%; */
+/*   width: 100%; */
+/* } */
